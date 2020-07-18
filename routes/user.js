@@ -35,6 +35,7 @@ router.post("/sign-up", async (req, res) => {
       token: newUser.token,
       account: newUser.account,
     });
+    console.log(newUser);
   } catch (error) {
     res.status(400).json({ message: error.message });
   }
